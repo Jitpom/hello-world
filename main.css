@@ -1,0 +1,207 @@
+body {
+    font-family: 'Quicksand', sans-serif;
+}
+
+header {
+    width: 100%;
+    height: 200px;
+    background-color: whitesmoke;
+    border: 1px solid #222222;
+}
+
+header > h1 {
+    text-align: center;
+}
+
+nav {
+    background-color: darkcyan;
+}
+
+nav > ul {
+    list-style: none;
+    padding: 0;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+    height: 50px;
+}
+
+nav > ul > li {
+    display: inline-block;
+    color: white;
+    height: 50px;
+    line-height: 50px;
+    width: 20%;
+    box-sizing: border-box;
+    text-align: center;
+    cursor: pointer;
+}
+
+nav > ul > li > div > a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    letter-spacing: 0.2em;
+}
+
+section.content {
+    width: 80%;
+    background-color: palegreen;
+    margin-left: auto;
+    margin-right: auto;
+    border: 1px solid #222222;
+    margin-top: 5px;
+}
+
+
+.content > h1 {
+    text-align: center;
+    margin: 0;
+}
+
+.content > p {
+    text-align: justify;
+    padding-left: 2em;
+    padding-right: 2em;
+}
+
+.content > p::first-letter {
+    font-size: 150%;
+    padding-left: 2em;
+}
+
+.grey-box {
+    background-color: lightgrey !important;
+}
+
+.cool-form {
+    width: 50%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.cool-form > fieldset > label {
+    float: left;
+    width: 30%;
+    margin-top: 10px;
+    height: 1.5em;
+    line-height: 1.5em;
+    padding-top: 0;
+    padding-bottom: 0;
+}
+
+.cool-form > fieldset > input {
+    float: left;
+    width: 60%;
+    font-family: inherit;
+    font-size: 100%;
+    margin-top: 10px;
+    height: 1.5em;
+    line-height: 1.5em;
+    padding-top: 0;
+    padding-bottom: 0;
+}
+
+.cool-form > fieldset > input[type=text],
+.cool-form > fieldset > input[type=password] {
+    padding-left: 0.5em;
+}
+
+
+.cool-form > fieldset > input:focus{
+    border: 1px dashed black;
+    box-shadow: 0px 0px 0px 5px white, 0px 0px 5px 5px #666666;
+    border-radius: 5px;
+}
+
+div {
+    width: 100%;
+    text-align: center;
+}
+
+.cool-form > fieldset > div> button {
+    margin-left: auto !important;
+    margin-right: auto !important;
+    margin-top: 10px;
+    height: 40px;
+    padding-left: 1em;
+    padding-right: 1em;
+    background-color: #ffa500;
+    color: white;
+    font-family: inherit;
+    font-size: 100%;
+    border-radius: 15px;
+}
+
+.clearfix {
+    clear: both;
+}
+
+table.zeera-form {
+    width: 60%;
+    margin-left: auto;
+    margin-right: auto;
+    border-collapse: collapse;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+table.zeera-form tr {
+    background-color: white;
+}
+
+table.zeera-form tr:first-child {
+    border-bottom: 1px dashed darkcyan;
+    border-top: 5px solid darkcyan;
+}
+
+table.zeera-form tr:nth-child(2n) {
+    background-color: #ededed;
+}
+
+table.zeera-form th,
+table.zeera-form td {
+    text-align: left;
+    padding-left: 0.5em;
+    height: 1.5em;
+    line-height: 1.5em;
+}
+
+table.zeera-form tr:hover {
+    background-color: #cafcca;
+    cursor: pointer;
+}
+
+.button-container {
+    perspective: 150px;
+    height: 50px;
+    line-height: 50px;
+    overflow: hidden;
+    cursor: pointer;
+}
+
+.button-container > .button-bg {
+    background-color: orchid;
+    width: 100%;
+    height: inherit;
+    opacity: 1;
+    transform: translateY(50px) rotateX(90deg);
+    transition: 0.5s 0s transform ease-out, 1.5s 0.5s background-color ease-out;
+}
+
+.button-container > .button-content {
+    width: 100%;
+    height: inherit;
+    line-height: inherit;
+    transform: translateY(-50px);
+}
+
+.button-container > .button-content > h1 {
+    margin: 0;
+}
+
+.button-container:hover div.button-bg {
+    opacity: 1;
+    transform: translateY(0px) rotateX(0deg);
+    background-color: orange;
+}
